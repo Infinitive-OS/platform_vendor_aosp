@@ -154,4 +154,5 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+$(call inherit-product, vendor/aosp/config/common_version.mk)
 $(call inherit-product-if-exists, vendor/extra/product.mk)
